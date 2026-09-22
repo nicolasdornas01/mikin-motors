@@ -38,6 +38,92 @@
         </p>
 
     </div>
+        <section id="pesquisa-satisfacao">
+        <div class="container">
+
+            <h2>Pesquisa de Satisfação</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Dados do Cliente</legend>
+
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(31) 99999-9999">
+
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" min="1" max="120">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Como você avalia sua experiência?</legend>
+
+                    <input type="radio" id="muito-satisfeito" name="avaliacao" value="muito-satisfeito">
+                    <label for="muito-satisfeito">Muito satisfeito</label>
+
+                    <input type="radio" id="satisfeito" name="avaliacao" value="satisfeito">
+                    <label for="satisfeito">Satisfeito</label>
+
+                    <input type="radio" id="neutro" name="avaliacao" value="neutro">
+                    <label for="neutro">Neutro</label>
+
+                    <input type="radio" id="insatisfeito" name="avaliacao" value="insatisfeito">
+                    <label for="insatisfeito">Insatisfeito</label>
+
+                    <input type="radio" id="muito-insatisfeito" name="avaliacao" value="muito-insatisfeito">
+                    <label for="muito-insatisfeito">Muito insatisfeito</label>
+                </fieldset>
+
+                <label for="como-conheceu">Como conheceu a empresa?</label>
+                <select id="como-conheceu" name="como-conheceu">
+                    <option value="">Selecione uma opção</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="google">Google</option>
+                    <option value="indicacao">Indicação de amigos</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="servico">Qual serviço você utilizou?</label>
+                <select id="servico" name="servico">
+                    <option value="">Selecione uma opção</option>
+                    <option value="importacao">Importação sob encomenda</option>
+                    <option value="estoque">Venda de estoque próprio</option>
+                    <option value="manutencao">Manutenção especializada</option>
+                    <option value="avaliacao">Avaliação e compra</option>
+                </select>
+
+                <fieldset>
+                    <legend>Você recomendaria nossa empresa para outras pessoas?</legend>
+
+                    <input type="radio" id="recomendacao-sim" name="recomendacao" value="sim">
+                    <label for="recomendacao-sim">Sim</label>
+
+                    <input type="radio" id="recomendacao-talvez" name="recomendacao" value="talvez">
+                    <label for="recomendacao-talvez">Talvez</label>
+
+                    <input type="radio" id="recomendacao-nao" name="recomendacao" value="nao">
+                    <label for="recomendacao-nao">Não</label>
+                </fieldset>
+
+                <label for="comentarios">Conte-nos o que podemos melhorar:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <label for="data-utilizacao">Data em que utilizou o serviço</label>
+                <input type="date" id="data-utilizacao" name="data-utilizacao">
+
+                <button type="submit">Enviar avaliação</button>
+                <button type="reset">Limpar formulário</button>
+            </form>
+
+        </div>
+    </section>
 
     <footer class="rodape">
         <p>Mikin Motors — Belo Horizonte, MG</p>
